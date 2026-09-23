@@ -17,7 +17,7 @@
     <p class="excerpt">{{excerpt words="24"}}</p>
     <div class="meta">
       <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
-      &middot; {{reading_time}}
+      &middot; {{reading_time minute="1 min de lecture" minutes="% min de lecture"}}
       {{#if access}}{{else}} &middot; <span style="color:var(--gold)">Abonn&eacute;s</span>{{/if}}
     </div>
   </div>
