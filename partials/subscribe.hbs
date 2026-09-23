@@ -1,0 +1,20 @@
+{{!-- Reusable subscribe block. Uses Ghost's native members form (data-members-form). --}}
+<section class="subscribe">
+  <div class="wrap">
+    <div class="eyebrow klabel">Le Corridor Intelligence &middot; Avec Joseph Soares</div>
+    <div class="h2">Renseignement strat&eacute;gique pour d&eacute;cideurs.</div>
+    <p class="sub" style="margin-left:auto;margin-right:auto">La plupart des gens suivent l&rsquo;actualit&eacute;. Peu comprennent ce qui la fait vraiment bouger. Recevez-le directement dans votre bo&icirc;te de r&eacute;ception &mdash; gratuitement.</p>
+
+    {{#unless @member}}
+      <form class="subscribe-form" data-members-form="signup">
+        <input class="subscribe-input" type="email" name="email" data-members-email
+          placeholder="Votre courriel" aria-label="Votre courriel" required>
+        <button class="subscribe-btn" type="submit">S&rsquo;abonner</button>
+      </form>
+      <p class="subscribe-msg" data-members-error></p>
+      <p class="subscribe-note">Gratuit. Aucun pourriel. D&eacute;sabonnement en tout temps.</p>
+    {{else}}
+      <p class="subscribe-note" style="font-size:16px;color:var(--bone)">Vous &ecirc;tes abonn&eacute;. <a href="#/portal/account" data-portal="account" style="color:var(--gold)">G&eacute;rer mon compte &rarr;</a></p>
+    {{/unless}}
+  </div>
+</section>

@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "Le Corridor Intelligence",
+  "short_name": "Corridor",
+  "description": "Renseignement stratégique pour décideurs — avec Joseph Soares. Breffages, dépêches et analyses de ce qui fait vraiment bouger l’actualité.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/?ref=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "theme_color": "#0A3161",
+  "background_color": "#0A3161",
+  "categories": ["news", "business", "education"],
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dernier breffage",
+      "short_name": "Breffage",
+      "description": "Ouvrir le dernier breffage du Corridor Intelligence",
+      "url": "/?ref=pwa-shortcut",
+      "icons": [{ "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "S’abonner",
+      "short_name": "S’abonner",
+      "description": "Rejoindre la liste",
+      "url": "/#/portal/signup",
+      "icons": [{ "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

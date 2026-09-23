@@ -1,0 +1,25 @@
+{{!-- Corridor Intelligence PWA — head wiring. Manifest, service worker, icons and splash ship inside this theme and are served by Ghost under /assets/ via the {{asset}} helper. --}}
+<link rel="manifest" href="{{asset "manifest.webmanifest"}}">
+<meta name="theme-color" content="#0A3161">
+<link rel="icon" href="{{asset "favicon.ico"}}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{asset "icons/favicon-32.png"}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset "icons/favicon-16.png"}}">
+
+{{!-- iOS: standalone display, status bar, home-screen title + icon --}}
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Corridor">
+<link rel="apple-touch-icon" href="{{asset "icons/apple-touch-icon-180.png"}}">
+
+{{!-- iOS launch (splash) screens --}}
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1290x2796.png"}}" media="screen and (device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1284x2778.png"}}" media="screen and (device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1179x2556.png"}}" media="screen and (device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1170x2532.png"}}" media="screen and (device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1125x2436.png"}}" media="screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-828x1792.png"}}" media="screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-750x1334.png"}}" media="screen and (device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1536x2048.png"}}" media="screen and (device-width:768px) and (device-height:1024px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-1668x2388.png"}}" media="screen and (device-width:834px) and (device-height:1194px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="{{asset "splash/splash-2048x2732.png"}}" media="screen and (device-width:1024px) and (device-height:1366px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">

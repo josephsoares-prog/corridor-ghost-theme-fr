@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{#tag}}
+<header class="home-hero" style="padding-bottom:20px">
+  <div class="wrap">
+    <div class="eyebrow">Th&egrave;me</div>
+    <h1 style="font-size:44px">{{name}}</h1>
+    {{#if description}}<p class="lede">{{description}}</p>{{/if}}
+  </div>
+</header>
+{{/tag}}
+
+<section class="blk" style="padding-top:30px">
+  <div class="wrap">
+    <ul class="postfeed">
+      {{#foreach posts}}
+        {{> "post-card"}}
+      {{/foreach}}
+    </ul>
+    {{pagination}}
+  </div>
+</section>

@@ -1,0 +1,26 @@
+{{!-- Sticky navigation — mirrors josephsoares.com chrome --}}
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="https://josephsoares.com/accueil.html">
+      {{#if @site.logo}}
+        <img src="{{@site.logo}}" alt="{{@site.title}}">
+      {{else}}
+        Le Corridor <span class="g">Intelligence</span>
+      {{/if}}
+    </a>
+
+    <button class="menutoggle" aria-label="Menu" aria-expanded="false"
+      onclick="var n=this.closest('.site-nav').querySelector('.navlinks');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'));">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="navlinks">
+      {{navigation}}
+      {{#unless @member}}
+        <a class="cta" href="#/portal/signup" data-portal="signup">S&rsquo;abonner</a>
+      {{else}}
+        <a class="cta" href="#/portal/account" data-portal="account">Compte</a>
+      {{/unless}}
+    </div>
+  </div>
+</nav>

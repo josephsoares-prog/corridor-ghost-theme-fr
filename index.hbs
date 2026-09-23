@@ -1,0 +1,41 @@
+{{!< default}}
+
+{{#unless pagination.prev}}
+<header class="home-hero">
+  <div class="wrap">
+    <div class="eyebrow">Le Corridor Intelligence &middot; Avec Joseph Soares</div>
+    <h1>La plupart des gens suivent l&rsquo;actualit&eacute;. <span class="i">Peu comprennent ce qui la fait vraiment bouger.</span></h1>
+    <p class="lede">{{#if @site.description}}{{@site.description}}{{else}}Renseignement strat&eacute;gique pour d&eacute;cideurs &mdash; le signal plut&ocirc;t que le bruit, par quelqu&rsquo;un qui a vu ces d&eacute;cisions se prendre de l&rsquo;int&eacute;rieur.{{/if}}</p>
+    <div class="ctar">
+      {{#unless @member}}
+        <a href="#/portal/signup" data-portal="signup" class="btn btn-gold">S&rsquo;abonner gratuitement</a>
+      {{else}}
+        <a href="#/portal/account" data-portal="account" class="btn btn-gold">Mon compte</a>
+      {{/unless}}
+      <a href="https://www.youtube.com/@LeCorridorIntelligence?sub_confirmation=1" rel="noopener" target="_blank" class="btn btn-ghost">Regarder</a>
+    </div>
+  </div>
+</header>
+{{/unless}}
+
+<section class="blk">
+  <div class="wrap">
+    {{#unless pagination.prev}}
+      <div class="feed-head">
+        <div class="eyebrow">Derni&egrave;res parutions</div>
+      </div>
+    {{/unless}}
+
+    <ul class="postfeed">
+      {{#foreach posts}}
+        {{> "post-card"}}
+      {{/foreach}}
+    </ul>
+
+    {{pagination}}
+  </div>
+</section>
+
+{{#unless pagination.prev}}
+  {{> "subscribe"}}
+{{/unless}}

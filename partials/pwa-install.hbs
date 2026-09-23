@@ -1,0 +1,12 @@
+{{!-- PWA install affordances. Hidden by default; the theme JS reveals the
+     right one: the Install bar on Android/desktop Chromium (beforeinstallprompt),
+     the Add-to-Home-Screen hint on iOS Safari (which has no install event). --}}
+<div id="pwa-install" class="pwa-bar" hidden role="dialog" aria-label="Installer Le Corridor Intelligence">
+  <span class="pwa-bar__txt">Installez Le Corridor Intelligence pour la lecture hors ligne et un acc&egrave;s rapide.</span>
+  <button id="pwa-install-btn" class="pwa-bar__cta" type="button">Installer</button>
+  <button id="pwa-install-x" class="pwa-bar__x" type="button" aria-label="Fermer">&times;</button>
+</div>
+<div id="pwa-ios" class="pwa-bar" hidden role="dialog" aria-label="Ajouter Le Corridor Intelligence &agrave; l&rsquo;&eacute;cran d&rsquo;accueil">
+  <span class="pwa-bar__txt">Sur l&rsquo;&eacute;cran d&rsquo;accueil&nbsp;: touchez l&rsquo;ic&ocirc;ne Partager, puis &laquo;&nbsp;Sur l&rsquo;&eacute;cran d&rsquo;accueil&nbsp;&raquo;.</span>
+  <button id="pwa-ios-x" class="pwa-bar__x" type="button" aria-label="Fermer">&times;</button>
+</div>

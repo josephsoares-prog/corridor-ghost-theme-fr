@@ -1,0 +1,24 @@
+{{!-- Single post card for feeds --}}
+<li class="pcard {{#if featured}}featured{{/if}}">
+  {{#if feature_image}}
+    <a class="pcard-img" href="{{url}}" aria-label="{{title}}">
+      <img srcset="{{img_url feature_image size="s"}} 300w,
+                   {{img_url feature_image size="m"}} 600w,
+                   {{img_url feature_image size="l"}} 1000w"
+           sizes="(max-width:880px) 100vw, 540px"
+           src="{{img_url feature_image size="m"}}"
+           alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+           loading="lazy">
+    </a>
+  {{/if}}
+  <div class="pcard-body">
+    {{#primary_tag}}<span class="ptag">{{name}}</span>{{/primary_tag}}
+    <h3><a href="{{url}}">{{title}}</a></h3>
+    <p class="excerpt">{{excerpt words="24"}}</p>
+    <div class="meta">
+      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+      &middot; {{reading_time}}
+      {{#if access}}{{else}} &middot; <span style="color:var(--gold)">Abonn&eacute;s</span>{{/if}}
+    </div>
+  </div>
+</li>
